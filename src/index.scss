@@ -1,0 +1,784 @@
+// подключение шрифтов
+
+@font-face {
+  font-family: Amalfi;
+  src: url(./fonts/Amalfi-Regular.eccc3ecc.ttf);
+}
+@font-face {
+  font-family: Acrom;
+  src: url(./fonts/Acrom-Regular.72592368.ttf);
+}
+@font-face {
+  font-family: Athiti;
+  src: url(./fonts/Athiti-Regular.5a140806.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+._container {
+  max-width: 82.5rem;
+  margin: 0px auto;
+  box-sizing: content-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+// Переменные
+
+$green: #bee4d6;
+$orange: #ffdec5;
+$grey: #f0e7e5;
+$pink: #ffc5d2;
+$Amalfi: Amalfi, sans-serif;
+$Acrom: Acrom, sans-serif;
+$Athiti: Athiti, sans-serif;
+
+// Header
+
+header {
+  color: #fff;
+  background: url(./img/intro.jpg) no-repeat;
+  max-width: 120rem;
+  height: 62.5rem;
+
+  a {
+    color: #fff;
+  }
+
+  .top__header {
+    font-family: $Acrom;
+    border-bottom: .0625rem solid white;
+    padding: 1rem 0;
+    line-height: 1.2rem;
+
+    span:not(:last-child) {
+      margin: 0 1.625rem 0 0;
+    }
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5625rem;
+    margin-bottom: 7rem;
+
+    ul {
+      display: flex;
+
+      li:not(:last-child) {
+        margin: 0 3.5rem 0 0;
+      }
+
+      a {
+        font-family: $Amalfi;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-left: .625rem;
+        }
+
+      }
+
+      .submenu {
+        position: absolute;
+        transform: scaleY(0);
+        transform-origin: 0 0;
+      }
+
+      li:nth-child(3):hover { 
+
+        .submenu {
+          transform: scaleY(1);
+          height: 15rem;
+          width: 13.375rem;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      a:hover {
+        color: $green;
+
+        img {
+          content: url("img/VectorOpen.png");
+        }
+
+      }
+
+    }
+    
+    span:last-child {
+      float: right;
+    }
+
+    .yourDobro {
+      font-family: $Acrom;
+      font-size: .875rem;
+      line-height: 1.05rem;
+    }
+
+    .fees__container {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-family: $Acrom;
+      }
+  
+      span:not(:last-child) {
+        padding: 0 .75rem;
+        background: $green;
+        border-radius: .375rem;
+        margin: 0 .375rem .3125rem 0;
+        color: #000;
+        font-family: $Amalfi;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+  
+      .rub {
+        font-family: $Athiti;
+        font-size: 1.875rem;
+        font-weight: 300;
+        line-height: 3rem;
+      }
+
+    }
+
+  }
+
+  h1 {
+    margin-top: 5.625rem;
+    font-family: $Amalfi;
+    font-size: 15.1875rem;
+    font-weight: 300;
+    color: $orange;
+    line-height: 18.525rem;
+  }
+
+  .header__text {
+    max-width: 78.75rem;
+    margin: 0 auto;
+    font-family: $Amalfi;
+    font-size: 6.25rem;
+    line-height: 7.5rem;
+
+    p {
+      margin-bottom: -2.5rem;
+    }
+
+  }
+
+}
+
+.fund {
+  margin: 7.5rem 0 0;
+
+  .fund__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: $grey;
+    border-radius: 2.3125rem;
+
+    h1 {
+      font-family: $Amalfi;
+      font-weight: 400;
+      font-size: 6.25rem;
+      line-height: 7.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    p {
+      max-width: 40.0625rem;
+      font-family: $Acrom;
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+
+    .fund__button {
+      display: flex;
+      margin-top: 3.125rem;
+
+      button {
+        position: absolute;
+        background: none;
+        border: none;
+        font-family: $Amalfi;
+        font-weight: 400;
+        font-size: 3.5625rem;
+        line-height: 4.275rem;
+        cursor: pointer;
+      }
+
+      img {
+        width: 30%;
+        position: relative;
+        left: 6rem;
+        top: -1.5rem;
+        cursor: pointer;
+      }
+
+    }   
+
+  }
+
+}
+
+.news {
+  margin: 7.5rem 0 0;
+
+  .news__container {
+    display: flex;
+
+    .news__text {
+      
+      h1 {
+        font-family: $Amalfi;
+        font-weight: 400;
+        font-size: 6.9375rem;
+        line-height: 8.325rem;
+      }
+
+      p {
+        font-family: $Acrom;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        max-width: 19.6875rem;
+      }
+
+      button {
+        margin: 1.75rem 0 0;
+        background: $green;
+        border: none;
+        font-family: $Amalfi;
+        font-weight: 400;
+        font-size: 2.3125rem;
+        line-height: 2.775rem;
+        border-radius: 1.25rem;
+        padding: .125rem 1.8125rem;
+        letter-spacing: 2.5%;
+        cursor: pointer;
+
+        div {
+          float: right;
+          margin-left: 1.25rem;
+          transform: rotate(45deg);
+        }
+      }
+
+    }
+
+    .card {
+      margin: 0 0 0 1.25rem;
+
+      .black {
+        position: relative;
+        background: rgba($color: #000000, $alpha: 0.4);
+        height: 29.8125rem;
+        width: 19.6875rem;
+        border-radius: 1.875rem;
+        padding: 340px 0 0 1.375rem;
+        color: #fff;
+
+        h2 {
+          font-family: $Amalfi;
+          font-weight: 400;
+          font-size: 3.5625rem;
+          line-height: 4.275rem;
+          color: $pink;
+          margin: 0 0 -.75rem;
+        }
+  
+        span {
+          font-family: $Acrom;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.2rem;
+        }
+
+      }
+
+      .black:hover {
+        background:linear-gradient(0deg, rgb(40, 40, 40) 0%,rgba(255,197,210,0) 64.88%);
+      }
+
+    }
+
+    .card1 {
+      background: url('./img/card1.jpg');
+    }
+
+    .card2 {
+      background: url('./img/card2.jpg');
+    }
+    
+    .card3 {
+      background: url('./img/card3.jpg');
+    }
+
+  }
+  
+}
+
+.card {
+  height: 29.8125rem;
+  width: 19.6875rem;
+  border-radius: 1.875rem;
+}
+
+.arrow {
+  position: absolute;
+  transform: rotate(45deg);
+  right: 1.3125rem;
+  bottom: 2.125rem;
+  font-size: 1.75rem;
+}
+
+.children {
+  margin-top: 7.5rem;
+  padding: 18.375rem 0 0;
+  background: url(./img/bg.png);
+
+  .children__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-family: $Amalfi;
+      font-weight: 400;
+      font-size: 6.9375rem;
+      line-height: 8.325rem;
+    }
+
+    button {
+      margin: 1.75rem 0 0;
+      height: 2.625rem;
+      background: $green;
+      border: none;
+      font-family: $Amalfi;
+      font-weight: 400;
+      font-size: 2.3125rem;
+      line-height: 2.775rem;
+      border-radius: 1.25rem;
+      padding: .125rem 1.8125rem;
+      letter-spacing: 2.5%;
+      cursor: pointer;
+
+      div {
+        float: right;
+        margin-left: 1.25rem;
+        transform: rotate(45deg);
+      }
+
+    }
+
+  }
+
+  .children__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .child__card1 {
+      background: url('./img/child1.jpg');
+    }
+    .child__card2 {
+      background: url('./img/child2.jpg');
+    }
+    .child__card3 {
+      background: url('./img/child3.jpg');
+    }
+    .child__card4 {
+      background: url('./img/child4.jpg');
+    }
+    .child__card5 {
+      background: url('./img/child5.jpg');
+    }
+    .child__card6 {
+      background: url('./img/child6.jpg');
+    }
+    .child__card7 {
+      background: url('./img/child7.jpg');
+    }
+    .child__card8 {
+      background: url('./img/child8.jpg');
+    }
+
+    .card {
+      margin-bottom: 3.3125rem;
+      
+      .light {
+        position: relative;
+        background: linear-gradient(0deg,#FFC5D2 0%,rgba(255,197,210,0) 64.88%);
+        height: 29.8125rem;
+        width: 19.6875rem;
+        border-radius: 1.875rem;
+        padding: 21.25rem 0 0 1.375rem;
+        color: #000;
+      
+        h2 {
+          font-family: $Amalfi;
+          font-weight: 400;
+          font-size: 3.5625rem;
+          line-height: 4.275rem;
+          margin: 0 0 -.75rem;
+        }
+  
+        span {
+          display: block;
+          max-width: 14.6875rem;
+          font-family: $Acrom;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.2rem;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.about {
+  height: 35.3125rem;
+  margin-top: 7.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: $grey;
+  border-radius: 2.3125rem;
+  padding-left: 3.6875rem;
+
+  .about__container {
+
+    h1 {
+      font-family: $Amalfi;
+      font-weight: 400;
+      font-size: 6.9375rem;
+      line-height: 8.325rem;
+    }
+
+    ul {
+
+      li {
+        display: flex;
+        margin-top: 1.375rem;
+
+        img {
+          width: 1.875rem;
+          height: 1.875rem;
+          margin-right: 1.25rem;
+        }
+
+        p {
+          font-family: $Acrom;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.2rem;
+        }
+
+      }
+
+    }
+
+    button {
+      margin: 3.25rem 0 0;
+      height: 2.625rem;
+      background: $green;
+      border: none;
+      font-family: $Amalfi;
+      font-weight: 400;
+      font-size: 2.3125rem;
+      line-height: 2.775rem;
+      border-radius: 1.25rem;
+      padding: .125rem 1.8125rem;
+      letter-spacing: 2.5%;
+      cursor: pointer;
+
+      div {
+        float: right;
+        margin-left: 1.25rem;
+        transform: rotate(45deg);
+      }
+
+    }
+
+  }
+
+  .home {
+    height: 26.9375rem;
+  }
+
+}
+
+
+.video {
+  margin: 7.5rem 0 11.25rem;
+
+  .video__container {
+    display: flex;
+    justify-content: center;
+
+    .video__title {
+      margin-right: 1.25rem;
+
+      h1 {
+        font-family: $Amalfi;
+        font-weight: 400;
+        font-size: 6.9375rem;
+        line-height: 8.325rem;
+      }
+
+      p {
+        font-family: $Acrom;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        width: 19.6875rem;
+      }
+
+      button {
+        margin: 3.25rem 0 0;
+        height: 2.625rem;
+        background: $green;
+        border: none;
+        font-family: $Amalfi;
+        font-weight: 400;
+        font-size: 2.3125rem;
+        line-height: 2.775rem;
+        border-radius: 1.25rem;
+        padding: .125rem 1.8125rem;
+        letter-spacing: 2.5%;
+        cursor: pointer;
+  
+        div {
+          float: right;
+          margin-left: 1.25rem;
+          transform: rotate(45deg);
+        }
+  
+      }
+
+    }
+
+    .videoo {
+      margin-right: 1.25rem;
+
+      video {
+        border-radius: 2rem;
+      }
+
+    }
+
+    .video__info {
+
+      h2 {
+        font-family: $Amalfi;
+        font-weight: 400;
+        font-size: 3.5625rem;
+        line-height: 4.275rem;
+      }
+
+      button {
+        margin: 3.25rem 0 0;
+        height: 2.625rem;
+        background: $pink;
+        border: none;
+        font-family: $Amalfi;
+        font-weight: 400;
+        font-size: 2.3125rem;
+        line-height: 2.775rem;
+        border-radius: 1.25rem;
+        padding: .125rem 1.8125rem;
+        letter-spacing: 2.5%;
+        cursor: pointer;
+  
+        div {
+          float: right;
+          margin-left: 1.25rem;
+          transform: rotate(90deg);
+          font-size: 6rem;
+          font-weight: 600;
+        }
+  
+      }
+
+    }
+
+  }
+
+}
+
+footer {
+
+  .footer__green {
+    background: $green;
+    height: 24.5625rem;
+    width: 709px / 1920px * 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .footer__pink {
+    background: $pink;
+    height: 24.5625rem;
+    width: 1211px / 1920px * 100%;
+    margin-left: 709px / 1920px * 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .footer__container {
+    z-index: 1;
+    width: 82.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    .footer__title {
+      margin-top: 2rem;
+
+      h1 {
+        font-family: $Amalfi;
+        font-weight: 400;
+        font-size: 8.375rem;
+        line-height: 10.05rem;
+      }
+
+      .footer__text {
+        padding: 0 15px;
+        margin-top: -2rem;
+        
+        p {
+          font-family: $Amalfi;
+          font-weight: 400;
+          font-size: 3.25rem;
+          line-height: 3.9rem;
+        }
+
+      }
+
+    }
+
+    .footer__body {
+
+      nav {
+        margin: 0 0 1.6875rem;
+
+        ul {
+          display: flex;
+          justify-content: center;
+          margin: 3.1875rem 0 0;
+
+          li {
+
+            a {
+              font-family: $Amalfi;
+              font-weight: 400;
+              font-size: 2.5rem;
+              line-height: 3rem;
+              color: #000;
+              display: flex;
+              align-items: center;
+
+              img {
+                margin-left: .625rem;
+              }
+
+            }
+
+          }
+
+          li:not(:last-child) {
+            margin: 0 1.8rem 0 0;
+          }
+
+          .submenu__footer {
+            position: absolute;
+            transform: scaleY(0);
+            transform-origin: 0 0;
+          }
+    
+          li:nth-child(3):hover { 
+    
+            .submenu__footer {
+              transform: scaleY(1);
+              height: 15rem;
+              width: 13.375rem;
+              margin: 0;
+              padding: 0;
+            }
+
+          }
+
+          li:nth-child(3) {
+            
+            a:hover {
+
+              img {
+                transform: rotate(180deg);
+              }
+
+            }
+
+          }
+
+        }
+        
+      }
+
+      .footer__span {
+        float: right;
+
+        span {
+          float: right;
+          font-family: $Acrom;
+          font-weight: 400;
+          font-size: 1.125rem;
+          line-height: 1.35rem;
+        }
+
+        span:not(:last-child) {
+          margin: 0 0 .5rem;
+        }
+
+      }
+
+    }
+
+  }
+
+}
