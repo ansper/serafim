@@ -1,17 +1,23 @@
 import mox from "../img/video.mp4";
 import moxjpg from "../img/mox.jpg";
+import { useRef } from "react";
 
 const Video = () => {
 
-const myVideo = document.getElementById("myVideo");
+    let state = true
 
-const play_pause = () => {
-    if(myVideo.paused) {
-        myVideo.play();
-    } else {
-        myVideo.paused();
+    const ref = useRef()
+
+    const video_player = () => {
+        if(state) {
+            ref.current.play()
+            state = false
+        } else {
+            ref.current.pause()
+            state = true
+        }
     }
-}
+
 
   return (
     <section className="video">
@@ -22,14 +28,14 @@ const play_pause = () => {
                 <button>ПОДРОБНЕЕ <div>&uarr;</div></button>
             </div>
             <div className="videoo">
-                <video controls width="538px" height="318px" poster={moxjpg} id="myVideo">
+                <video controls width="538px" height="318px" poster={moxjpg} id="myVideo" ref={ref}>
                     <source src={mox}/>
                 </video>
             </div>
             <div className="video__info">
                 <h2>С Новым 2023 годом!</h2>
                 <p>Пусть немного с опозданием, но от всей души поздравляем всех с Новым годом! Мира, Добра и Радости!!!</p>
-                <button onClick={() => {play_pause()}}>ПОСМОТРЕТЬ <div>=</div></button>
+                <button onClick={video_player}>ПОСМОТРЕТЬ <div>=</div></button>
             </div>
         </div>
     </section>
