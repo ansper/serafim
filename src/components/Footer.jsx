@@ -11,39 +11,39 @@ const Footer = () => {
           <h1>“Серафим”</h1>
           <div className="footer__text">
             <p>детский православный приют-пансион</p>
-            <a href="#"><img src={vk}/></a>
+            <a href="/"><img src={vk} alt='vk'/></a>
           </div>
         </div>
         <div className='footer__body'>
           <nav>
             <ul>
               <li>
-                <a href="#">ГЛАВНАЯ</a>
+                <a href="/">ГЛАВНАЯ</a>
               </li>
               <li>
-                <a href="#">НОВОСТИ</a>
+                <a href="/">НОВОСТИ</a>
               </li>
               <li>
-                <a href="#">О ПРИЮТЕ <img src={vector} alt="" /></a>
+                <a href="/">О ПРИЮТЕ <img src={vector} alt="" /></a>
                 <div className='submenu__footer'>
-                  <a href="#">О НАС</a>
-                  <a href="#">ОТЧЁТЫ</a>
-                  <a href="#">ОФИЦИАЛЬНЫЕ ДОКУМЕНТЫ</a>
-                  <a href="#">РЕКВИЗИТЫ</a>
-                  <a href="#">СОТРУДНИКИ</a>
+                  <a href="/">О НАС</a>
+                  <a href="/">ОТЧЁТЫ</a>
+                  <a href="/">ОФИЦИАЛЬНЫЕ ДОКУМЕНТЫ</a>
+                  <a href="/">РЕКВИЗИТЫ</a>
+                  <a href="/">СОТРУДНИКИ</a>
                 </div>
               </li>
               <li>
-                <a href="#">ПРИНИМАЕМ ДЕТЕЙ</a>
+                <a href="/">ПРИНИМАЕМ ДЕТЕЙ</a>
               </li>
               <li>
-                <a href="#">КАК ПОМОЧЬ?</a>
+                <a href="/">КАК ПОМОЧЬ?</a>
               </li>
               <li>
-                <a href="#">КАК НАС НАЙТИ</a>
+                <a href="/">КАК НАС НАЙТИ</a>
               </li>
               <li>
-                <a href="#">НАШИ ДЕТИ</a>
+                <a href="/">НАШИ ДЕТИ</a>
               </li>
             </ul>
           </nav>

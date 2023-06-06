@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import AboutItem from "./AboutItem"
 import Aboutpng from "../img/about.png";
 
@@ -16,7 +16,7 @@ const About = () => {
             </ul>
             <button>ПОДРОБНЕЕ <div>&uarr;</div></button>
         </div>
-        <img src={Aboutpng} alt="" className="home"/>
+        <img src={Aboutpng} alt="About" className="home"/>
     </section>
   )
 }

@@ -1,10 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import ChildrenItem from './ChildrenItem';
 import ChildBot from '../img/child_bot.png'
 
 const Children = () => {
-
-const [value, setValue] = useState("TEXT");
 
   return (
     <div>
@@ -24,7 +22,7 @@ const [value, setValue] = useState("TEXT");
                 <ChildrenItem post={{id: 8, title: 'Ариша (6 лет)', body: 'Очень хочет побывать в аквапарке'}}/>
             </div>
         </section>
-        <img src={ChildBot} alt="" />
+        <img src={ChildBot} alt="Child" />
     </div>
   )
 }

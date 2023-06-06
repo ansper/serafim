@@ -1,9 +1,7 @@
-import React, {useState} from 'react'
+import React from 'react'
 import NewsItem from './NewsItem';
 
 const News = () => {
-
-const [value, setValue] = useState("TEXT");
 
   return (
     <section className="news">

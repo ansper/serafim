@@ -1,15 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 import video from "../img/video.mp4";
-import serafim from "../img/serafim.webp";
-=======
-import mox from "../img/video.mp4";
-import moxjpg from "../img/mox.jpg";
->>>>>>> parent of c426bd4 (jsx:add new video)
-=======
-import mox from "../img/video.mp4";
-import moxjpg from "../img/mox.jpg";
->>>>>>> parent of c426bd4 (jsx:add new video)
 import { useRef } from "react";
 
 const Video = () => {
@@ -38,16 +27,8 @@ const Video = () => {
                 <button>ПОДРОБНЕЕ <div>&uarr;</div></button>
             </div>
             <div className="videoo">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <video controls width="538px" height="318px" poster={serafim} id="myVideo" ref={ref}>
+                <video controls width="538px" height="318px" id="myVideo" ref={ref}>
                     <source src={video}/>
-=======
-=======
->>>>>>> parent of c426bd4 (jsx:add new video)
-                <video controls width="538px" height="318px" poster={moxjpg} id="myVideo" ref={ref}>
-                    <source src={mox}/>
->>>>>>> parent of c426bd4 (jsx:add new video)
                 </video>
             </div>
             <div className="video__info">

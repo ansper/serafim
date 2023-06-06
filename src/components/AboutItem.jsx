@@ -1,10 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 import heart from "../img/heart.png"
 
 const AboutItem = (props) => {
   return (
         <li>
-            <img src={heart} alt="" />
+            <img src={heart} alt="heart" />
             <p>{props.list.text}</p>
         </li>
   )
