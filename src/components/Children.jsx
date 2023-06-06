@@ -22,7 +22,7 @@ const Children = () => {
                 <ChildrenItem post={{id: 8, title: 'Ариша (6 лет)', body: 'Очень хочет побывать в аквапарке'}}/>
             </div>
         </section>
-        <img src={ChildBot} alt="Child" />
+        <img src={ChildBot} className='children__img' alt="Child" />
     </div>
   )
 }
